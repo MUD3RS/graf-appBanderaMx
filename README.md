@@ -8,17 +8,10 @@ La aplicación fue desarrollada utilizando HTML, CSS y JavaScript.
 
 ## Integrantes del equipo
 
-Nombre
-
-Número de control
-
-Cesar Ramses Hurtado Rios
-
-24200090
-
-Abraham Uriel Zavala Osorio
-
-23201052
+| Nombre | Número de control |
+|---|---|
+| Cesar Ramses Hurtado Rios | 24200090 |
+| Abraham Uriel Zavala Osorio | 23201052 |
 
 ## Prompts utilizados en ChatGPT
 
