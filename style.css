@@ -1,0 +1,211 @@
+
+/* CONFIGURACIÓN GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #292d32;
+}
+
+
+/* CONTENEDOR PRINCIPAL */
+
+.contenedor-principal {
+    border: 2px solid #222;
+    margin: 20px 5px;
+    padding: 20px 12px;
+}
+
+
+/* TÍTULO */
+
+h1 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+
+/* SECCIONES DE COLORES */
+
+.seccion-color {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+
+.seccion-color label {
+    font-size: 13px;
+    margin-bottom: 10px;
+    min-height: 20px;
+}
+
+
+/* CONTROLES DESLIZANTES */
+
+.form-range {
+    width: 100%;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.form-range::-webkit-slider-thumb {
+    background-color: #0d6efd;
+}
+
+.form-range::-moz-range-thumb {
+    background-color: #0d6efd;
+}
+
+
+/* ESPACIO PARA ALINEACIÓN */
+
+.espacio-control {
+    height: 24px;
+}
+
+
+/* CÓDIGOS HEXADECIMALES */
+
+.seccion-color p {
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+
+/* FRANJAS DE LA BANDERA */
+
+.franja {
+    width: 100%;
+    height: 250px;
+}
+
+
+/* FRANJA VERDE */
+
+#franjaVerde {
+    background-color: #009900;
+}
+
+
+/* FRANJA BLANCA */
+
+.franja-blanca {
+    background-color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ESCUDO NACIONAL */
+
+.escudo-nacional {
+    width: 65%;
+    max-width: 180px;
+    max-height: 85%;
+    height: auto;
+
+    object-fit: contain;
+    mix-blend-mode: multiply;
+}
+
+
+/* FRANJA ROJA */
+
+#franjaRoja {
+    background-color: #9D0000;
+}
+
+
+/* SECCIÓN DE INTEGRANTES */
+
+.integrantes {
+    margin-top: 35px;
+    padding-top: 20px;
+
+    border-top: 1px solid #dddddd;
+
+    text-align: center;
+}
+
+.integrantes h2 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+
+/* TARJETAS DE INTEGRANTES */
+
+.tarjeta-integrante {
+    background-color: #f8f9fa;
+
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+
+    padding: 18px 12px;
+    height: 100%;
+
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.tarjeta-integrante:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 4px 12px
+                rgba(0, 0, 0, 0.1);
+}
+
+.tarjeta-integrante h3 {
+    font-size: 16px;
+    font-weight: 600;
+
+    margin-bottom: 10px;
+}
+
+.tarjeta-integrante p {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+
+/* DISEÑO RESPONSIVO */
+
+@media (max-width: 767px) {
+
+    .contenedor-principal {
+        margin: 10px 0;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .franja {
+        height: 180px;
+    }
+
+    .escudo-nacional {
+        max-width: 120px;
+    }
+
+    .integrantes {
+        margin-top: 25px;
+    }
+
+    .integrantes h2 {
+        font-size: 20px;
+    }
+
+}
